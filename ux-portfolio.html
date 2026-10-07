@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 /* phone cover: stacked layout so title, phones and DABANG never overlap */
-.cover-m{display:none;background:#fff;color:#0b0b0b;font-family:Pretendard,Inter,"Noto Sans KR",sans-serif}
+.cover-m{display:none;container-type:inline-size;overflow:hidden;background:#fff;color:#0b0b0b;font-family:Pretendard,Inter,"Noto Sans KR",sans-serif}
 .cover-m .pad{padding:20px 20px 28px}
 .cover-m .top{display:flex;justify-content:space-between;font-size:12px;font-weight:500}
-.cover-m h1{margin:18px 0 0;font-weight:400;line-height:.86;letter-spacing:-.14em;font-size:calc((100vw - 40px) / 4.4)}
+.cover-m h1{margin:18px 0 0;font-weight:400;line-height:.86;letter-spacing:-.14em;font-size:calc((100vw - 40px) / 4.7);font-size:calc((100cqw - 40px) / 4.7)}
 .cover-m h1 .ux{display:block;font-size:1.75em;letter-spacing:-.04em;margin-bottom:.04em}
 .cover-m h1 .pf{display:block;white-space:nowrap}
 .cover-m hr{border:0;border-top:1.5px solid #0b0b0b;margin:26px 0 20px}
@@ -24,7 +24,7 @@
 .cover-m .phones{display:flex;gap:14px;justify-content:center;align-items:flex-start}
 .cover-m .phones img{display:block;width:44%;height:auto;border:1.5px solid #0b0b0b;border-radius:18px;background:#fff}
 .cover-m .phones img+img{margin-top:36px}
-.cover-m .dab{display:block;margin-top:28px;font-size:calc((100vw - 40px) / 4.6);line-height:1;letter-spacing:-.01em;text-align:right;white-space:nowrap}
+.cover-m .dab{display:block;margin-top:28px;font-size:calc((100vw - 40px) / 4.9);font-size:calc((100cqw - 40px) / 4.9);line-height:1;letter-spacing:-.01em;text-align:right;white-space:nowrap}
 @media(max-width:820px){.cover-m{display:block}.sec.cover-d{display:none}}
 </style>
 <title>Dabang UX Portfolio</title>
