@@ -81,6 +81,13 @@ ul.stars li::before{content:"★";position:absolute;left:0;top:0;color:var(--sta
 .intro .txt p{margin:0;color:var(--muted);text-wrap:pretty}
 .intro .item:first-of-type .txt p{color:var(--ink)}
 .intro .txt h4{margin:10px 0 0;font-size:16px;font-weight:700}
+.covers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.cover-card{position:relative;display:block;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:#fff;text-decoration:none;color:#0A0A0A}
+.cover-card img{display:block;width:100%;aspect-ratio:1440/1020;object-fit:contain;transition:transform .35s}
+.cover-card:hover img{transform:scale(1.02)}
+.cover-label{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;background:#fff;font-size:15px;font-weight:700}
+.cover-label i{font-style:normal;padding:6px 16px;border-radius:999px;background:var(--amber);font-size:14px;font-weight:500;box-shadow:0 8px 24px rgba(237,179,89,.45)}
+@media(max-width:860px){.covers{grid-template-columns:1fr}}
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#0A0A0A;color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s}
 .toast.on{opacity:1}
 
@@ -221,6 +228,17 @@ Primitives 44 · Tokens 49</div>
     <article class="item"><h3>AI와 함께 작업하는 방법</h3><div class="txt"><p>저는 최근 AI를 디자인 과정에서도 적극적으로 활용하고 있습니다.</p><p>아이디어를 정리하거나 조사 내용을 요약하고, 가설이나 인터뷰 질문을 점검할 때 AI의 도움을 받습니다. 또한 Claude와 같은 AI와 대화하면서 제가 설계한 화면을 실제로 작동하는 웹으로 구현하기도 합니다.</p><p>이런 방식을 흔히 ‘바이브코딩’이라고 부릅니다.</p><p>저에게 AI는 디자인을 대신해 주는 도구라기보다, 아이디어를 빠르게 시험하고 직접 사용해 볼 수 있는 결과물로 만들어 주는 도구에 가깝습니다.</p><p>예전에는 화면을 디자인한 뒤 결과물을 보는 데서 작업이 끝났다면, 지금은 실제로 동작하는 형태까지 만들어 직접 사용해 보고 다시 문제를 찾을 수 있습니다.</p></div></article>
     <article class="item"><h3>왜 그렇게 디자인했는지도 기록하기</h3><div class="txt"><p>작업할 때는 결과물뿐만 아니라 디자인을 결정한 이유도 함께 기록하고 있습니다.</p><p>어떤 문제가 있다고 생각했는지, 어떤 가설을 세웠는지, 조사 결과가 어땠는지, 그리고 왜 이런 디자인을 선택했는지 정리합니다.</p><p>이런 과정을 Obsidian이라는 노트 프로그램에 기록하면서 작업 내용을 쌓고 있습니다.</p><p>나중에 결과물을 설명할 때 “그냥 이렇게 하는 게 좋아 보여서 만들었다”가 아니라, 어떤 문제를 발견했고 어떤 근거를 바탕으로 해결했는지 설명할 수 있도록 작업 과정을 남기고 있습니다.</p></div></article>
     <article class="item"><h3>마치며</h3><div class="txt"><p>지금은 기존 서비스를 다시 설계해 보기도 하고, 새로운 서비스를 처음부터 기획해 보기도 하면서 UX/UI 디자인의 여러 과정을 직접 경험하고 있습니다.</p><p>화면을 만드는 데서 끝내지 않고, 사용자의 불편함을 찾아보고 조사하고, 실제로 작동하는 형태까지 만들어 보는 방식으로 작업하고 있습니다. 최근에는 AI도 함께 활용하면서 아이디어를 더 빠르게 확인하고 구현하는 방법을 익혀 가고 있습니다.</p><p>앞으로도 다양한 프로젝트를 진행하면서 제가 어떤 방식으로 문제를 발견하고 해결해 가는지 계속 기록해 보려고 합니다.</p><p>UX/UI 디자인이나 제가 진행한 프로젝트에 대해 궁금한 점이 있거나, 함께 이야기해 보고 싶은 분이 있다면 편하게 연락 주세요. 제 연락처는 프로필을 참고해주시면 감사하겠습니다.</p></div></article>
+  </section>
+
+  <section class="covers" aria-label="포트폴리오 바로가기">
+    <a class="cover-card" href="ux-portfolio.html">
+      <img style="background:#fff" src="img/cover-ux-card.jpg" alt="UX 포트폴리오 표지. 다방 원룸 탐색 UX 개선" loading="lazy">
+      <span class="cover-label">UX 포트폴리오<i>보기 →</i></span>
+    </a>
+    <a class="cover-card" href="ui-portfolio.html">
+      <img style="background:#E6E4E3" src="img/cover-ui-card.jpg" alt="UI 포트폴리오 표지. 사커비 UI 리디자인" loading="lazy">
+      <span class="cover-label">UI 포트폴리오<i>보기 →</i></span>
+    </a>
   </section>
 </main>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
