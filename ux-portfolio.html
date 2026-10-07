@@ -3,7 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+/* phone cover: stacked layout so title, phones and DABANG never overlap */
+.cover-m{display:none;background:#fff;color:#0b0b0b;font-family:Pretendard,Inter,"Noto Sans KR",sans-serif}
+.cover-m .pad{padding:20px 20px 28px}
+.cover-m .top{display:flex;justify-content:space-between;font-size:12px;font-weight:500}
+.cover-m h1{margin:18px 0 0;font-weight:400;line-height:.86;letter-spacing:-.14em;font-size:calc((100vw - 40px) / 4.4)}
+.cover-m h1 .ux{display:block;font-size:1.75em;letter-spacing:-.04em;margin-bottom:.04em}
+.cover-m h1 .pf{display:block;white-space:nowrap}
+.cover-m hr{border:0;border-top:1.5px solid #0b0b0b;margin:26px 0 20px}
+.cover-m .ttl{font-weight:700;font-size:26px;line-height:1.3}
+.cover-m .sub{margin:6px 0 0;font-size:14px}
+.cover-m dl{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px;margin:22px 0 0}
+.cover-m dt{font-size:12px;font-weight:600;letter-spacing:.04em;color:#6f6d6c}
+.cover-m dd{margin:2px 0 0;font-size:15px;font-weight:600}
+.cover-m .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:26px}
+.cover-m .stats b{display:block;font-size:clamp(26px,8vw,44px);font-weight:400;line-height:1}
+.cover-m .stats span{display:block;margin-top:8px;font-size:11px;line-height:1.5;color:#444}
+.cover-m .black{background:#0b0b0b;color:#fff;padding:28px 20px 24px;overflow:hidden}
+.cover-m .phones{display:flex;gap:14px;justify-content:center;align-items:flex-start}
+.cover-m .phones img{display:block;width:44%;height:auto;border:1.5px solid #0b0b0b;border-radius:18px;background:#fff}
+.cover-m .phones img+img{margin-top:36px}
+.cover-m .dab{display:block;margin-top:28px;font-size:calc((100vw - 40px) / 4.6);line-height:1;letter-spacing:-.01em;text-align:right;white-space:nowrap}
+@media(max-width:820px){.cover-m{display:block}.sec.cover-d{display:none}}
+</style>
 <title>Dabang UX Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
@@ -26,7 +49,35 @@ body{margin:0;background:var(--ink);color:var(--ink);font-family:Pretendard,Inte
 </head>
 <body>
 <main id="doc">
-<section class="sec" style="background:#ffffff" aria-label="00 cover"><div class="wrap" data-h="1020.19"><div class="sc" style="width:1440px;height:1020.19px"><div class="relative bg-white h-[1020.19px] overflow-clip w-[1440px]" data-name="00 cover">
+<section class="cover-m" aria-label="표지">
+  <div class="pad">
+    <div class="top"><span>(PORTFOLIO)</span><span>2026</span></div>
+    <h1><span class="ux">UX</span><span class="pf">PORTFOLIO</span></h1>
+    <hr>
+    <div class="ttl">다방 원룸 탐색<br>UX 개선</div>
+    <p class="sub">매물을 믿고, 망설임 없이 중개사에게 연락하기까지</p>
+    <dl>
+      <div><dt>DESIGNER</dt><dd>문건호</dd></div>
+      <div><dt>ROLE</dt><dd>UX·UI Designer (1인)</dd></div>
+      <div><dt>TOOL</dt><dd>Figma · HTML · Claude</dd></div>
+      <div><dt>PERIOD</dt><dd>MAY – JUL 2026</dd></div>
+    </dl>
+    <div class="stats">
+      <div><b>13명</b><span>설문 유효 응답<br>23명 응답 중 스크리닝 통과</span></div>
+      <div><b>76.9%</b><span>설문(n=13) 불편 1위<br>사진을 믿기 어려움</span></div>
+      <div><b>61.5%</b><span>위반건축물 불안 · 헛걸음<br>각 13명 중 8명</span></div>
+    </div>
+  </div>
+  <div class="black">
+    <div class="phones">
+      <img src="img/8e951.png" alt="다방 매물 상세 화면" loading="eager">
+      <img src="img/163ff.png" alt="다방 안심정보 화면" loading="eager">
+    </div>
+    <span class="dab">DABANG</span>
+  </div>
+</section>
+
+<section class="sec cover-d" style="background:#ffffff" aria-label="00 cover"><div class="wrap" data-h="1020.19"><div class="sc" style="width:1440px;height:1020.19px"><div class="relative bg-white h-[1020.19px] overflow-clip w-[1440px]" data-name="00 cover">
         <div class="absolute bg-[#0b0b0b] h-[994px] left-[768px] top-0 w-[672px]" data-name="Rectangle"></div>
         <div class="absolute border-[#0b0b0b] border-[1.5px] border-solid h-[535.5px] left-[845.5px] rounded-[16.5px] top-[90px] w-[247.5px]" data-name="photo">
           <img alt="" class="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[16.5px] size-full" src="img/8e951.png">
